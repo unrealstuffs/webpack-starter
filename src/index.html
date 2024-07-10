@@ -1,9 +1,13 @@
-<div style="max-width: 700px; margin: auto">
-	<h2 class="heading">Welcome to startup Webpack HTML template</h2>
-	<p>
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam reprehenderit nulla alias expedita a qui,
-		pariatur doloremque ipsa fugit laboriosam odio iure recusandae laborum delectus praesentium magni reiciendis
-		voluptatem. Sed.
-	</p>
-	<a href="chunk.html">Go to page with another css/js</a>
-</div>
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title><%= htmlWebpackPlugin.options.title %></title>
+        <link rel="shortcut icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon" />
+    </head>
+    <body>
+        @require('parts/header/header.html', {"title": "Webpack"})
+        <img src="./assets/images/bg.jpg" alt="aa" />
+    </body>
+</html>

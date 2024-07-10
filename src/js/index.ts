@@ -1,7 +1,15 @@
 import '../styles/main.scss'
+import '../parts/header/header'
+import Header from '../parts/header/header'
 
-const hello = () => {
-	return 'Webpack starter works!'
-}
+document.addEventListener('DOMContentLoaded', () => {
+    class App {
+        // header: Header
 
-console.log(hello())
+        constructor() {
+            new Header()
+        }
+    }
+
+    new App()
+})
